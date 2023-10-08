@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 *{
     box-sizing: border-box;
-    font-family: 'Work Sans';
+    font-family: 'Young Serif', serif;
     margin: 0;
     padding: 0;
 }
-html{
-    /* me permite deslizar cuando hago clic en los links del menu */
-    scroll-behavior: smooth;
-}
-/* MENU */
+
 .contenedor-header{
     background-color: rgba(255, 255, 255, 0.171);
     position: fixed;
@@ -53,34 +50,58 @@ html{
 }
 
 
-.seccion-ser{
-    background: linear-gradient(120deg, rgba(161, 196, 253, 0.301) 0%, rgba(194, 233, 251, 0.308) 100%), url(img/caroline-lm--m-4tYmtLlI-unsplash.jpg);
-    background-size: cover;
-  
 
-}
 .servicio-contenedor{
     width: 100%;
+    background: linear-gradient(120deg, rgba(161, 196, 253, 0.301) 0%, rgba(194, 233, 251, 0.308) 100%), url(img/dentista-profesional-masculino-guantes-mascara-discutir-como-vera-tratamiento-dientes-paciente.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     color: #1e2326;
     
+    
+    
 }
+
 .ser-tit{
-    font-family:'Times New Roman', Times, serif;
+    
     font-weight: 300;
     font-size:  80px;
-    text-align: center;
-    text-transform: capitalize;
+    
+    position: absolute;
+    bottom:250px
+    
 }
 .ser-sub{
     text-align: center;
-    text-transform: capitalize;
+    
+    position: absolute;
+    bottom: 200px;
     margin: 20px 0;
     font-size: 20px;
 
+}
+.turnos{
+    position: absolute;
+    bottom: 150px;
+}
+.turniyos{
+    padding:14px 50px;
+    border: none;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    font-weight: 500;
+    border-radius: 100px;
+    box-shadow:0 0 20px rgba(0, 0, 0, 0.3) ;
+    
+    
+}
+.turniyos:hover{
+    background-color: aliceblue;
 }
