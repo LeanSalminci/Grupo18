@@ -6,6 +6,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: #161D25;
+}
 
 .contenedor-header{
     background-color: rgba(255, 255, 255, 0.171);
@@ -85,7 +88,7 @@
     position: absolute;
     bottom: 200px;
     margin: 20px 0;
-    font-size: 20px;
+    font-size: 25px;
 
 }
 .turnos{
@@ -93,15 +96,70 @@
     bottom: 150px;
 }
 .turniyos{
-    padding:14px 50px;
+    display: inline-block;
+    font-size: 18px;
     border: none;
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    padding:14px 50px;
+    background-color:#a1c4fd;
     font-weight: 500;
     border-radius: 100px;
+    
     box-shadow:0 0 20px rgba(0, 0, 0, 0.3) ;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    cursor:pointer;
     
     
 }
 .turniyos:hover{
-    background-color: aliceblue;
+    background-color: hsl(216, 63%, 74%);
+    
+
 }
+.Quienes{
+    padding: 50px 0;
+}
+
+.contenedor
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.texto{
+    flex-basis: 50%;
+    padding-right: 200px;
+}
+h2{
+    font-size: 50px;
+    color: #FFFFFF;
+    margin: 15px 0;
+    line-height: 1;
+}
+.texto p{
+    font-size: 16px;
+    color: #D5D5D5;
+}
+hr{
+    border: 1px solid #330867;
+    width: 390px;
+    margin-bottom: 30px;
+}
+.mi-imagen{
+    flex-basis: 50%;
+    text-align: center;
+
+}
+.mi-imagen img{
+    width: 600px;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+     
+
+
