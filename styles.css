@@ -1,86 +1,266 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
-*{
-    box-sizing: border-box;
-    font-family: 'Work Sans';
+body {
+    font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
+    /* Estilos para la imagen de fondo */
+    background-image: url('imagenConsultorio.jpg');
+    background-size: cover; /* Ajusta la imagen al tamaño de la ventana del navegador */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-attachment: fixed; /* Fija la imagen en su lugar mientras se desplaza */
+    background-position: center center;
+
+        
 }
-html{
-    /* me permite deslizar cuando hago clic en los links del menu */
-    scroll-behavior: smooth;
-}
-/* MENU */
-.contenedor-header{
-    background-color: rgba(255, 255, 255, 0.171);
+
+
+
+header {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 99;
-
-}
-.contenedor-header header{
-    max-width: 1100px;
-    margin: auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-}
-.contenedor-header header .logo a{
-    
-    font-family: 'Righteous';
-    font-size: 36px;
-    color: blue;
-    text-decoration: none;
-    
-}
-.contenedor-header header ul{
-    display: flex;
-    list-style: none;
-}
-.contenedor-header header nav ul li a{
-    text-align: none;
-    font-size: 20px;
-    color: black;
-    margin: 0 15px;
-    padding: 3px;
-    transition: .5s;
-    text-decoration: none;
-}
-.contenedor-header header nav ul li a:hover{
-    color: blue;
-}
-
-
-.seccion-ser{
-    background: linear-gradient(120deg, rgba(161, 196, 253, 0.301) 0%, rgba(194, 233, 251, 0.308) 100%), url(img/caroline-lm--m-4tYmtLlI-unsplash.jpg);
-    background-size: cover;
-  
-
-}
-.servicio-contenedor{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    color: #1e2326;
-    
 }
-.ser-tit{
-    font-family:'Times New Roman', Times, serif;
-    font-weight: 300;
-    font-size:  80px;
-    text-align: center;
-    text-transform: capitalize;
-}
-.ser-sub{
-    text-align: center;
-    text-transform: capitalize;
-    margin: 20px 0;
-    font-size: 20px;
 
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+/* Secciones con estilos */
+section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Formulario de contacto */
+#contacto {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+}
+
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+/* Estilos para la sección "Quiénes Somos" */
+#quienes-somos {
+   
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
+    padding: 50px 0;
+    text-align: justify;
+}
+
+
+.quienes-somos-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.quienes-somos-contenido h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.quienes-somos-contenido p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+/* Estilos para la sección "Tratamientos" */
+#tratamientos {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px 0;
+    text-align: justify;
+}
+
+.tratamientos-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.tratamientos-contenido h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tratamientos-contenido ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tratamientos-contenido li {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.tratamientos-contenido li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tratamientos-contenido h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.tratamientos-contenido p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.tratamientos-contenido img {
+    max-width: 100%;
+    border-radius: 5px;
+    
+
+}
+#tratamientos li img {
+    display: block;
+    margin: 0 auto; 
+}
+
+.pie-de-pagina {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+/* Animación de agrandamiento al pasar el mouse */
+.section-hover {
+    transition: transform 0.3s;
+}
+.section-hover:hover {
+    transform: scale(1.02);
+}
+
+
+
+/* Estilos para el formulario de contacto */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.formulario-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+}
+
+.seccion-titulo {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.boton {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; 
+    margin: 0 auto;
+}
+
+/* Estilo para mensajes de éxito o error */
+.form-message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    text-align: center; /* Alinea el texto al centro */
+}
+
+/* Estilo para mensajes de éxito */
+.success-message {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Estilo para mensajes de error */
+.error-message {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Pie de página */
+.pie-de-pagina {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
