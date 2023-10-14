@@ -3,42 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/43cc0999a0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Consultorio Odontologico</title>
+    <script src="animaciones.js" defer></script>
+    <title>Consultorio Odontológico</title>
 </head>
-<body>
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">Odontologia</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#"><b>Home</b></a></li>
-                    <li><a href="#"><b>Quienes somos</b></a></li>
-                    <li><a href="#"><b>Tratamientos</b></a></li>
-                    <li><a href="#"><b>Turnos</b></a></li>
-                    <li><a href="#"><b>Contacto</b></a></li>
-                    
-                </ul>
-            </nav>
-            
-        </header>
-    </div>
+<body id="home">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#quienes-somos">Quienes somos</a></li>
+                <li><a href="#tratamientos">Tratamientos</a></li>
+                <li><a href="formulario.html"> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+     <section id="home" class="section-hover">
+        <!--<div id="animacion">
+        </div>-->
+    </section>
     
-    <section class=seccion-ser>
-        <div class=" servicio-contenedor" >
-            <h1 class="ser-tit">Servicio Odontologico</h1>
-            <p class="ser-sub">Siempre al servicio de la gente</p>
+    <section id="quienes-somos" class="section-hover">
+        <div class="quienes-somos-contenido">
+            <h2>Quiénes Somos</h2>
+            <p>Somos un equipo de profesionales apasionados por la odontología. Nuestra misión es brindar atención dental de alta calidad y mejorar la salud bucal de nuestros pacientes. Contamos con años de experiencia y estamos comprometidos con la satisfacción de quienes confían en nosotros para su cuidado dental.</p>
         </div>
     </section>
+    
 
-    <section class="pagina2"> 
-        <div><h2>Quienes Somos</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita necessitatibus fugit soluta, eos cum inventore, facilis molestias est rem officia dolore aut libero, obcaecati facere tenetur et distinctio sequi mollitia.</p></div>
-
+    <section id="tratamientos">
+        <div class="tratamientos-contenido">
+            <h2>Nuestros Tratamientos</h2>
+            <ul>
+                <li class="section-hover">
+                    <h3>Blanqueamiento Dental</h3>
+                    <img src="blanqueamiento.jpg" alt="Blanqueamiento Dental">
+                    <p>En los tiempos que corren, la sociedad cada vez demanda más una buena presencia. Mejorar el aspecto de nuestra sonrisa nos hará ganar en seguridad y en autoestima, tanto en nuestra faceta laboral como personal. Entre los tratamientos estéticos más solicitados, se encuentra el blanqueamiento dental. Gracias a él, podremos reducir varios tonos el color original de nuestros dientes, convirtiendo nuestra sonrisa en una más blanca y brillante.</p>
+                    <p>Confía en nosotros para lograr una sonrisa más brillante y radiante con nuestro tratamiento de blanqueamiento dental. Mejora tu confianza y autoestima con una sonrisa más blanca.</p>
+                </li>
+                <li class="section-hover">
+                    <h3>Ortodoncia</h3>
+                    <img src="ortodoncia.jpg" alt="Ortodoncia">
+                    <p>Mejora la alineación de tus dientes y la mordida con nuestros tratamientos de ortodoncia. Ofrecemos opciones de brackets tradicionales e invisibles.</p>
+                </li>
+                <li class="section-hover">
+                    <h3>Implantes Dentales</h3>
+                    <img src="implantes.jpg" alt="Implantes Dentales">
+                    <p>Recupera dientes perdidos de forma permanente con nuestros implantes dentales. Restauramos tu sonrisa de manera natural y funcional.</p>
+                </li>
+                <li class="section-hover">
+                    <h3>Extracciones</h3>
+                    <img src="extracciones2.jpg" alt="Extracciones">
+                    <p>Realizamos extracciones dentales con cuidado y precisión, garantizando una experiencia sin dolor y una recuperación rápida.</p>
+                </li>
+                <li class="section-hover">
+                    <h3>Odontología Pediátrica</h3>
+                    <img src="odontologiapediatrica.jpeg" alt="Odontología Pediátrica">
+                    <p>Cuidamos la salud dental de los más pequeños. Nuestros tratamientos pediátricos están diseñados para brindar atención amigable y efectiva a los niños.</p>
+                </li>
+            </ul>
+        </div>
     </section>
-    <section class="Tratamientos"></section>
+    
+
+   
+
+    <footer>
+        <p>&copy; 2023 Consultorio Odontológico</p>
+    </footer>
 </body>
 </html>
