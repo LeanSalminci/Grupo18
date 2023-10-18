@@ -176,15 +176,19 @@ h2{
     border-radius: 5px;
     
 }
-.trat{
-    padding: 20px;
-}
+
 
 .grid-trat{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 300px 300px 300px;
     margin: 0;
-    gap: 20px;
+    justify-content: center;
+    gap: 30px;
+}
+.section-hover{
+    border-radius: 5px;
+    width: 100%;
+    
 }
 
 .tratamientos-contenido h2 {
@@ -211,26 +215,27 @@ h2{
 
 .tratamientos-contenido h3 {
     font-size: 24px;
-    background-color: #ccc;
+    background-color: #808B96;
     padding: 10px; 
     text-align: center;
 }
 
 .tratamientos-contenido p {
     font-size: 16px;
+    padding: 20px;
     line-height: 1.6;
-    color: #D5D5D5;
+    color:black;
+    background-color: #808B96;
     text-align: center;
+    border-radius: 0 0 5px 5px;
     
 }
 
 .tratamientos-contenido img {
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
     width: 100%;
-    height: 250px;
+    height: 300px;
     
-    
-
 }
 #tratamientos li img {
     display: block;
