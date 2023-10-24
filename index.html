@@ -4,32 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="animaciones.js" defer></script>
+    
     <title>Odontologia Integral</title>
 </head>
 <body>
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">Odontologia</a>
+                <a href="#"><b>OdoIntegral</b></a>
             </div>
-            <nav id="nav">
+            <nav id="nav" >
                 <ul>
-                    <li><a href="#Home">Inicio</a></li>
-                    <li><a href="#Quienes somos">Quienes somos</a></li>
-                    <li><a href="#tratamientos">Tratamientos</a></li>
-                    <li><a href="#">Turnos</a></li>
+                    <li><a href="#Home" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#Quienes somos" onclick="seleccionar()" >Quienes somos</a></li>
+                    <li><a href="#tratamientos" onclick="seleccionar()" >Tratamientos</a></li>
+                    <li><a href="#">Turnos </a></li>
                     <li><a href="#">Contacto</a></li>
 
                 </ul>
             </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
 
         </header>
     </div>
     
     <section class=seccion-ser id="Home">
         <div class=" servicio-contenedor" >
-            <h1 class="ser-tit">Servicio Odontologico</h1>
+            <h1 class="ser-tit">Odontologia Integral</h1>
             <p class="ser-sub">Siempre al servicio de la gente</p>
             <div class="turnos">
                 <input type="button" class="turniyos" value="Turnos">
@@ -76,29 +81,29 @@
             <div class="trat">
                 <ul class="grid-trat">
                     <li class="section-hover">
-                        <img src="blanqueamiento.jpg" alt="Blanqueamiento Dental">
+                        <img src="img/trat/blanqueamiento.jpg" alt="Blanqueamiento Dental">
                         <h3>Blanqueamiento Dental</h3>
                         <p>Mediante nuestro Kit de Blanqueamiento vas a lograr resultados progresivos desde la comodidad de tu casa</p>
                     </li>
                     <li class="section-hover">
-                        <img src="ortodoncia.jpg" alt="Ortodoncia">
+                        <img src="img/trat/ortodoncia.jpg" alt="Ortodoncia">
                         <h3>Ortodoncia</h3>
                         <p>Mejora la alineación de tus dientes y la mordida con nuestros tratamientos de ortodoncia. Ofrecemos opciones de brackets tradicionales e invisibles.</p>
                     </li>
                     <li class="section-hover">
                         
-                        <img src="implantes.jpg" alt="Implantes Dentales">
+                        <img src="img/trat/implantedental.jpg" alt="Implantes Dentales">
                         <h3>Implantes Dentales</h3>
                         <p>Recupera dientes perdidos de forma permanente con nuestros implantes dentales. Restauramos tu sonrisa de manera natural y funcional.</p>
                     </li>
                     <li class="section-hover">
                         
-                        <img src="extracciones2.jpg" alt="Extracciones">
+                        <img src="img/trat/extracciones2.jpg" alt="Extracciones">
                         <h3>Extracciones</h3>
                         <p>Realizamos extracciones dentales con cuidado y precisión, garantizando una experiencia sin dolor y una recuperación rápida.</p>
                     </li>
                     <li class="section-hover">
-                        <img src="odontologiapediatrica.jpeg" alt="Odontología Pediátrica">
+                        <img src="img/trat/odontologiapediatrica.jpeg" alt="Odontología Pediátrica">
                         <h3>Odontología Pediátrica</h3>
                         <p>Cuidamos la salud dental de los más pequeños. Nuestros tratamientos pediátricos están diseñados para brindar atención amigable y efectiva a los niños.</p>
                     </li>
@@ -121,6 +126,6 @@
 
    
 
-    
+    <script src="script.js"> </script>
 </body>
 </html>
