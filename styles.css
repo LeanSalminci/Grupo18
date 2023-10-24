@@ -379,7 +379,42 @@ h2{
         color: white;
         justify-content: center;
     }
+    .Quienes{
+        padding: 30px;
+    }
+    hr{
+        display: none;
+    }
+    .contenedor{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grid-trat{
+        display: grid;
+        grid-template-columns: 300px 300px;
+        
+    }
     
 }
-@media screen and (max-width:980px)
+@media screen and (max-width:700px){
+    .ser-tit{
+        font-size: 45px;
+        bottom: 250px;
+    }
+    .ser-sub{
+        font-size: 20px;
+        bottom: 200px;
+    }
+    .turnos{
+        bottom: 120px;
+    }
+    .grid-trat{
+        display: grid;
+        grid-template-columns: 300px;
+        
+    }
+    
+
+}
 
