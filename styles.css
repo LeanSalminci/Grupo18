@@ -354,6 +354,7 @@ h2{
     text-align: center;
 }
 @media screen and (max-width:980px){
+    
     nav{
         display: none;
     }
@@ -380,6 +381,7 @@ h2{
         justify-content: center;
     }
     .Quienes{
+        max-width: 980px;
         padding: 30px;
     }
     hr{
