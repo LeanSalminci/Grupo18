@@ -21,6 +21,7 @@ body{
     top: 0;
     left: 0;
     z-index: 99;
+    background-color: white;
     
 
      }
@@ -178,13 +179,13 @@ h2{
 .section-hover{
     border-radius: 5px;
     width: 100%;
-    background-color:#808B96;
+    background-color:#ffffff;
     
 }
 
 .tratamientos-contenido h2 {
     font-size: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     text-align: center;
 }
 .tratamientos-contenido ul {
@@ -207,7 +208,6 @@ h2{
 
 .tratamientos-contenido h3 {
     font-size: 24px;
-    
     background-color: #3d3de9;
     padding: 10px; 
     text-align: center;
@@ -218,7 +218,7 @@ h2{
     padding: 20px;
     line-height: 1.6;
     color:black;
-    background-color: #808B96;
+    background-color: #ffffff81;
     text-align: center;
     border-radius: 0 0 5px 5px;
     
@@ -227,7 +227,7 @@ h2{
 .tratamientos-contenido img {
     border-radius: 5px 5px 0 0;
     width: 100%;
-    height: 300px;
+    height: 250px;
     
 }
 #tratamientos li img {
@@ -244,10 +244,12 @@ h2{
 }
 
 /* Formulario de contacto */
-#contacto {
-    background-color: #f7f7f7;
-    padding: 50px 0;
+#contacto h2{
+    margin-top: 50px;
+    text-align: center;
+    
 }
+
 
 .formulario {
     max-width: 600px;
@@ -313,7 +315,7 @@ h2{
     border-radius: 4px;
 }
 
-.boton {
+button {
     background-color: #007BFF;
     color: #fff;
     border: none;
@@ -322,6 +324,13 @@ h2{
     cursor: pointer;
     display: block; 
     margin: 0 auto;
+}
+.warnings {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: red;
+    padding-top: 20px;
 }
 
 /* Estilo para mensajes de éxito o error */
@@ -366,7 +375,7 @@ h2{
         position: absolute;
         right: 0;
         top: 75px;
-        background-color: #252A2E;
+        background-color: black;
         width: 200px;
     }
     nav.responsive ul{
@@ -382,7 +391,7 @@ h2{
     }
     .Quienes{
         max-width: 980px;
-        padding: 30px;
+        padding: 20px;
     }
     hr{
         display: none;
@@ -391,15 +400,37 @@ h2{
         flex-direction: column;
         text-align: center;
     }
+    .texto h2{
+        padding: 10px;
+    }
+    .texto p{
+        padding: 15px;
+    }
+    .mi-imagen img{
+        width: 650px;
+        border-radius: 25px;
+    }
+
+    .tratamientos-contenido{
+        padding: 40px;
+    }
 
     .grid-trat{
         display: grid;
-        grid-template-columns: 300px 300px;
+        grid-template-columns: 260px 260px;
         
     }
+    .tratamientos-contenido img {
+        border-radius: 5px 5px 0 0;
+        width: 100%;
+        height: 200px;
+        
+        }
     
 }
 @media screen and (max-width:700px){
+  
+    
     .ser-tit{
         font-size: 45px;
         bottom: 250px;
@@ -411,11 +442,64 @@ h2{
     .turnos{
         bottom: 120px;
     }
+    .Quienes{
+        padding: 15px;
+        margin: 20px;
+    }
+    .texto h2{
+        font-size: 40px;
+    }
+    .texto p{
+        font-size: 15px;
+    }
+    .mi-imagen img{
+        width: 325px;
+        border-radius: 25px;
+    }
+    .tratamientos-contenido {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 15px;
+        border-radius: 5px;
+    }
+    .tratamientos-contenido h2 {
+        font-size: 40px;
+
+    }
+
     .grid-trat{
         display: grid;
-        grid-template-columns: 300px;
+        grid-template-columns: 150px 150px ;
         
+
     }
+    .tratamientos-contenido h3 {
+    font-size: 15px;
+    background-color: #3d3de9;
+    padding: 5px; 
+    text-align: center;
+    }
+
+    .tratamientos-contenido p {
+        
+    font-size: 12px;
+    padding: 5px;
+    line-height: 1.6;
+    color:black;
+    background-color: #808B96;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+    
+    }
+
+    .tratamientos-contenido img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 150px;
+    
+    }
+
+        
     
 
 }

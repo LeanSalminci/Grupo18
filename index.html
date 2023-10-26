@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="js/animaciones.js" defer></script>
     <script src="js/script.js"> </script>
+    <script src="form.js"></script>
     
     <title>Odontologia Integral</title>
 </head>
@@ -87,24 +88,24 @@
                     <li class="section-hover">
                         <img src="img/trat/ortodoncia.jpg" alt="Ortodoncia">
                         <h3>Ortodoncia</h3>
-                        <p>Mejora la alineación de tus dientes y la mordida con nuestros tratamientos de ortodoncia. Ofrecemos opciones de brackets tradicionales e invisibles.</p>
+                        <p>Mejora la alineación de tus dientes y la mordida con nuestros tratamientos de ortodoncia.</p>
                     </li>
                     <li class="section-hover">
                         
                         <img src="img/trat/implantedental.jpg" alt="Implantes Dentales">
                         <h3>Implantes Dentales</h3>
-                        <p>Recupera dientes perdidos de forma permanente con nuestros implantes dentales. Restauramos tu sonrisa de manera natural y funcional.</p>
+                        <p>Recupera dientes perdidos de forma permanente con nuestros implantes dentales.</p>
                     </li>
                     <li class="section-hover">
                         
                         <img src="img/trat/extracciones2.jpg" alt="Extracciones">
                         <h3>Extracciones</h3>
-                        <p>Realizamos extracciones dentales con cuidado y precisión, garantizando una experiencia sin dolor y una recuperación rápida.</p>
+                        <p>Realizamos extracciones dentales con cuidado y precisión, garantizando una experiencia sin dolor.</p>
                     </li>
                     <li class="section-hover">
                         <img src="img/trat/odontologiapediatrica.jpeg" alt="Odontología Pediátrica">
                         <h3>Odontología Pediátrica</h3>
-                        <p>Cuidamos la salud dental de los más pequeños. Nuestros tratamientos pediátricos están diseñados para brindar atención amigable y efectiva a los niños.</p>
+                        <p>Nuestros tratamientos pediátricos están diseñados para brindar atención amigable y efectiva a los niños.</p>
                     </li>
                     <li class="section-hover">
                         <img src="https://dentalcompanyweb.com/wp-content/uploads/2023/08/DC_Endoncia.jpg" alt="Blanqueamiento Dental">
@@ -114,6 +115,35 @@
                 </ul>
             </div>
         </div>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <div class="formulario-box">
+            <h2 class="seccion-titulo">Contacto</h2>
+            <form id="form-box" class="formulario">
+                <label for="" >Nombre:</label>
+                <input type="text" id="name" name="nombre" class="input" >
+                <label for="email" class="label">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" class="input" >
+                <label for="mensaje" class="label">Consulta:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" class="input" ></textarea>
+                <button type="submit">
+                    Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                </button>
+                <p class="warnings" id="warnings"></p>
+            </form>
+        
+            <div class="form-message success-message">
+                Gracias, tu mensaje ha sido enviado con éxito.
+            </div>
+        
+            <div class="form-message error-message">
+                Lo siento, ha ocurrido un error. Inténtalo de nuevo.
+            </div>
+        </div>
+        
+    
+
     </section>
 
 
