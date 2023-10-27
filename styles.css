@@ -48,7 +48,7 @@ body{
 .contenedor-header header nav ul li a{
     text-align: none;
     font-size: 20px;
-    color: black;
+    color: white;
     margin: 0 15px;
     padding: 3px;
     transition: .5s;
@@ -76,7 +76,7 @@ body{
     display: flex;
     justify-content:center;
     align-items: center;
-    color: #1e2326;  
+     
 }
 .ser-tit{
     
