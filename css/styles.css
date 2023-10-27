@@ -68,7 +68,7 @@ body{
 /* Cuerpo 1era pagina */
 .servicio-contenedor{
     width: 100%;
-    background: linear-gradient(120deg, rgba(161, 196, 253, 0.301) 0%, rgba(194, 233, 251, 0.308) 100%), url(/img/dentista-profesional-masculino-guantes-mascara-discutir-como-vera-tratamiento-dientes-paciente.jpg);
+    background: linear-gradient(120deg, rgba(161, 196, 253, 0.301) 0%, rgba(194, 233, 251, 0.308) 100%), url(img/dentista-profesional-masculino-guantes-mascara-discutir-como-vera-tratamiento-dientes-paciente.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
