@@ -9,7 +9,6 @@ function mostrarOcultarMenu(){
         menuVisible = true;
     }
 }
-
 const formulario = document.getElementById('form-box')
 const inputs = document.querySelectorAll('#formulario input')
 const expresiones = {
@@ -18,8 +17,3 @@ const expresiones = {
     correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	
      }
-
-
-
-
-

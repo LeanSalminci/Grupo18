@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Young Serif', serif;
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #161D25;
+}
+/* MENU */
+.contenedor-header{
+    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    
+
+     }
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a{
+    
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #3d3de9;
+    text-decoration: none;
+    
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    font-size: 20px;
+    color: black;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: blue;
+}
+.nav-responsive{
+    background-color: #3d3de9;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/* Cuerpo 1era pagina */
+.servicio-contenedor{
+    width: 100%;
+    background: linear-gradient(120deg, rgba(161, 196, 253, 0.301) 0%, rgba(194, 233, 251, 0.308) 100%), url(/img/dentista-profesional-masculino-guantes-mascara-discutir-como-vera-tratamiento-dientes-paciente.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: #1e2326;  
+}
+.ser-tit{
+    
+    font-weight: 300;
+    font-size:  80px;
+    text-align: center;
+    position: absolute;
+    bottom:300px
+    
+}
+.ser-sub{
+    position: absolute;
+    text-align: center;
+    bottom: 260px;
+    font-size: 30px;
+     }
+.turnos{
+    position: absolute;
+    bottom: 200px;
+    
+}
+.turniyos{
+    padding:14px 50px;
+    border: none;
+    cursor: pointer;
+    background: #3d3de9;
+    font-weight: 500;
+    border-radius: 100px;
+    box-shadow:0 0 20px rgba(0, 0, 0, 0.3);
+
+}
+.turniyos:hover{
+    background: rgb(74, 74, 248);;
+    
+}
+
+/* Estilo quienes somos */
+.Quienes{
+    padding: 50px 0;
+    margin: 20px;
+}
+
+.contenedor
+{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.texto{
+    flex-basis: 50%;
+    padding: 20px;
+}
+h2{
+    font-size: 50px;
+    color: #FFFFFF;
+    margin: 15px 0;
+    line-height: 1;
+}
+.texto p{
+    font-size: 16px;
+    color: #D5D5D5;
+}
+.texto hr{
+    border: 1px solid #330867;
+    width: 390px;
+    margin-bottom: 30px;
+}
+.mi-imagen{
+    flex-basis: 50%;
+    justify-content: center;
+
+}
+.mi-imagen img{
+    width: 500px;
+    border-radius: 25px;
+}
+
+
+
+/* Estilos para la sección "Tratamientos" */
+
+
+.tratamientos-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 5px;
+
+}
+
+
+.grid-trat{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    margin: 0;
+    justify-content: center;
+    gap: 30px;
+}
+.section-hover{
+    border-radius: 5px;
+    width: 100%;
+    background-color:#ffffff;
+    
+}
+
+.tratamientos-contenido h2 {
+    font-size: 50px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.tratamientos-contenido ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tratamientos-contenido ul li {
+    margin-bottom: 30px;
+    cursor: pointer;
+    
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition:  0.3s;
+}
+
+.tratamientos-contenido li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tratamientos-contenido h3 {
+    font-size: 24px;
+    background-color: #3d3de9;
+    padding: 10px; 
+    text-align: center;
+}
+
+.tratamientos-contenido p {
+    font-size: 16px;
+    padding: 20px;
+    line-height: 1.6;
+    color:black;
+    background-color: #ffffffd3;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+    
+}
+
+.tratamientos-contenido img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 250px;
+    
+}
+#tratamientos li img {
+    display: block;
+    margin: 0 auto; 
+}
+
+.pie-de-pagina {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Formulario de contacto */
+#contacto h2{
+    margin-top: 100px;
+    text-align: center;
+    
+}
+
+
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Animación de agrandamiento al pasar el mouse */
+.section-hover {
+    transition: transform 0.3s;
+}
+.section-hover:hover {
+    transform: scale(1.02);
+}
+
+
+
+/* Estilos para el formulario de contacto */
+
+
+.cuerpo {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.formulario-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+}
+
+.seccion-titulo {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.boton {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; 
+    margin: 0 auto;
+}
+
+/* Estilo para mensajes de éxito o error */
+.form-message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    text-align: center; /* Alinea el texto al centro */
+}
+
+/* Estilo para mensajes de éxito */
+.success-message {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Estilo para mensajes de error */
+.error-message {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Pie de página */
+.pie-de-pagina {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+@media screen and (max-width:980px){
+    
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: black;
+        width: 200px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+    .contenedor-header header nav ul li a {
+        color: white;
+        justify-content: center;
+    }
+    .Quienes{
+        max-width: 980px;
+        padding: 20px;
+    }
+    hr{
+        display: none;
+    }
+    .contenedor{
+        flex-direction: column;
+        text-align: center;
+    }
+    .texto h2{
+        padding: 10px;
+    }
+    .texto p{
+        padding: 15px;
+    }
+    .mi-imagen img{
+        width: 650px;
+        border-radius: 25px;
+    }
+
+    .tratamientos-contenido{
+        padding: 40px;
+    }
+
+    .grid-trat{
+        display: grid;
+        grid-template-columns: 260px 260px;
+        
+    }
+    .tratamientos-contenido img {
+        border-radius: 5px 5px 0 0;
+        width: 100%;
+        height: 200px;
+        
+        }
+    
+}
+@media screen and (max-width:700px){
+  
+    
+    .ser-tit{
+        font-size: 45px;
+        bottom: 250px;
+    }
+    .ser-sub{
+        font-size: 20px;
+        bottom: 200px;
+    }
+    .turnos{
+        bottom: 120px;
+    }
+    .Quienes{
+        padding: 15px;
+        margin: 20px;
+    }
+    .texto h2{
+        font-size: 40px;
+    }
+    .texto p{
+        font-size: 15px;
+    }
+    .mi-imagen img{
+        width: 325px;
+        border-radius: 25px;
+    }
+    .tratamientos-contenido {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 15px;
+        border-radius: 5px;
+    }
+    .tratamientos-contenido h2 {
+        font-size: 40px;
+
+    }
+
+    .grid-trat{
+        display: grid;
+        grid-template-columns: 150px 150px ;
+        
+
+    }
+    .tratamientos-contenido h3 {
+    font-size: 15px;
+    background-color: #3d3de9;
+    padding: 5px; 
+    text-align: center;
+    }
+
+    .tratamientos-contenido p {
+        
+    font-size: 12px;
+    padding: 5px;
+    line-height: 1.6;
+    color:black;
+    background-color: #808B96;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+    
+    }
+
+    .tratamientos-contenido img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 150px;
+    
+    }
+
+        
+    
+
+}
