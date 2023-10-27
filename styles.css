@@ -21,7 +21,6 @@ body{
     top: 0;
     left: 0;
     z-index: 99;
-    background-color: white;
     
 
      }
@@ -218,7 +217,7 @@ h2{
     padding: 20px;
     line-height: 1.6;
     color:black;
-    background-color: #ffffff81;
+    background-color: #ffffffd3;
     text-align: center;
     border-radius: 0 0 5px 5px;
     
@@ -245,7 +244,7 @@ h2{
 
 /* Formulario de contacto */
 #contacto h2{
-    margin-top: 50px;
+    margin-top: 100px;
     text-align: center;
     
 }
@@ -315,7 +314,7 @@ h2{
     border-radius: 4px;
 }
 
-button {
+.boton {
     background-color: #007BFF;
     color: #fff;
     border: none;
@@ -324,13 +323,6 @@ button {
     cursor: pointer;
     display: block; 
     margin: 0 auto;
-}
-.warnings {
-    width: 200px;
-    text-align: center;
-    margin: auto;
-    color: red;
-    padding-top: 20px;
 }
 
 /* Estilo para mensajes de éxito o error */
