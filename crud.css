@@ -1,0 +1,74 @@
+body{
+    background-color: none;
+}
+.nav-crud {
+    position:fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.nav-crud  .flex{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.nav-crud  .flex .logo a{
+    
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #3d3de9;
+    text-decoration: none;
+    
+}
+.nav-crud  .flex ul{
+    display: flex;
+    list-style: none;
+}
+.nav-crud  .flex nav ul li a{
+    text-align: none;
+    font-size: 20px;
+    color: white;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.nav-crud  .flex nav ul li a:hover{
+    color: blue;
+}
+.nav-responsive{
+    background-color: #3d3de9;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+thead tr{
+    color: white;
+
+}
+tbody td{
+    color: white;
+}
+.letra{
+    color: black;
+}
+main{
+    max-width: 1000px;
+    max-height: 1000px;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+
+}
+.prod{
+    color:white
+}
+
+
