@@ -11,7 +11,7 @@ const { createApp } = Vue
                 /*atributos para el guardar los valores del formulario */
                 id:0,
                 nombre:"",
-                descripcion:"",
+                
                 imagen:"",
                 stock:0,
                 precio:0,
@@ -44,7 +44,7 @@ const { createApp } = Vue
             grabar(){
                 let producto = {
                     nombre:this.nombre,
-                    descripcion:this.descripcion,
+                    
                     precio: this.precio,
                     stock: this.stock,
                     imagen:this.imagen
