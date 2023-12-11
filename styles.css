@@ -13,7 +13,9 @@ html{
 }
 
 body{
+    margin : 0;
     background-color: #161D25;
+   
 }
 /* MENU */
 .contenedor-header{
@@ -237,13 +239,7 @@ h2{
     margin: 0 auto; 
 }
 
-.pie-de-pagina {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
+
 
 /* Formulario de contacto */
 #contacto h2{
@@ -355,10 +351,7 @@ h2{
     background-color: #333;
     color: #fff;
     padding: 10px;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    
 }
 @media screen and (max-width:980px){
     
