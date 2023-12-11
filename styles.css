@@ -19,7 +19,7 @@ body{
 }
 /* MENU */
 .contenedor-header{
-    
+    background-color: #161D25;
     position:fixed;
     width: 100%;
     top: 0;
@@ -354,7 +354,9 @@ h2{
     
 }
 @media screen and (max-width:980px){
-    
+    .contenedor-header{
+        background-color: none;
+    }
     nav{
         display: none;
     }
